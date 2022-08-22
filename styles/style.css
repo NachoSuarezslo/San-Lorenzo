@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap');
+
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;}
+
+body{font-family: 'Kanit', sans-serif;
+font-weight: 500;
+font-size: x-large;
+background-image: url("./../images/hinchada.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+;}
+
+.navbar{display:grid;
+align-items: center;}
+
+
+.menu{height: 300px;
+    width: 300px;
+background-color: rgba(255, 0, 0, 0.705);
+padding-left: 0px;
+padding-top: 30px;
+list-style-type: none;
+border-radius: 50%;}
+ 
+.menu__item{
+    text-decoration: underline;
+    margin-block: 10px;
+    text-align: center;
+    align-items: flex-end;}
+
+    li a{color: rgb(16, 16, 110);
+text-align: center;}
+
+h1{margin-inline-start: 600px;
+margin-inline-end: 670px;
+margin-left: 600px;
+background-color: rgb(16, 16, 110);
+color: red;
+border-radius: 40px;
+text-align: center;}
+
+img{margin-inline-start: 650px;}
+
+iframe{margin-inline-start: 600px;
+height:300px ;
+width: 600px;}
+
+.subtitubi {font-weight: 400px;
+    margin-inline-start: 600px;
+    margin-inline-end: 670px;
+    margin-left: 600px;
+    background-color: rgb(16, 16, 110);
+    color: red;
+    border-radius: 40px;
+    text-align: center;}
+
+    .titubi{font-weight: 700;
+        margin-inline-start: 600px;
+        margin-inline-end: 670px;
+        margin-left: 600px;
+        background-color: rgb(16, 16, 110);
+        color: red;
+        border-radius: 40px;
+        text-align: center;}
+
+        .imgubi{margin-inline-start: 650px;
+            margin-top: 50px;}
+
+            .tittrof{font-weight: 700;
+                margin-inline-start: 600px;
+                margin-inline-end: 670px;
+                margin-left: 600px;
+                background-color: rgb(16, 16, 110);
+                color: red;
+                border-radius: 40px;
+                text-align: center;}
+
+                .imgtrof{margin-inline-start: 390px;
+                    width: 1100px;height: 600px;}
+
+                    .tithis{font-weight: 700;
+                        margin-inline-start: 600px;
+                        margin-inline-end: 670px;
+                        margin-left: 600px;
+                        background-color: rgb(16, 16, 110);
+                        color: red;
+                        border-radius: 40px;
+                        text-align: center;}
+
+                        .phis{color: red;
+                            margin-inline-start: 500px;
+                            margin-inline-end: 580px;
+                            padding-top: 50px;
+                            padding-right: 50px;
+                            padding-bottom: 50px;
+                            padding-left: 50px;
+                        background-color: rgba(11, 11, 80, 0.89);
+                    font-size: larger;
+                border-radius: 50px;}
+
+                .titcont{font-weight: 700;
+                    margin-inline-start: 600px;
+                    margin-inline-end: 670px;
+                    margin-left: 600px;
+                    background-color: rgb(16, 16, 110);
+                    color: red;
+                    border-radius: 40px;
+                    text-align: center;}
+
+                    fieldset{margin-inline-start: 400px;
+                        margin-inline-end: 500px;
+                    background-color: white;
+                    margin-top: 50px;}
+                    
+                    form{text-align: justify;}
