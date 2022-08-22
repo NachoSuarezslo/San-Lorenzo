@@ -4,6 +4,9 @@
 padding: 0;
 box-sizing: border-box;}
 
+.navbar:hover{width:100%;height: 100%;
+    background-color: rgb(234, 0, 255);}
+
 .navbar{font-family: 'Kanit', sans-serif;
     font-weight: 500;
     font-size: x-large;
@@ -16,6 +19,10 @@ grid-template-areas:
 "inicio contacto historia"
 "inicio trofeos  ubicacion"
 ;}
+
+.inicio:hover {width:100%;height: 100%;
+background-color: rgb(234, 0, 255);}
+
 
 .inicio{grid-area: inicio;
 background-image:url("./../images/escudo.jpg");
@@ -33,7 +40,8 @@ background-color:rgb(16, 16, 110);}
     background-color: rgb(180, 8, 8)}
 
     .ubicacion{grid-area: ubicacion;
-    background-color:rgb(16, 16, 110);}
+    background-color:rgb(16, 16, 110);
+transition: all 1s;}
 
 .navbar > div{
     display: flex;
