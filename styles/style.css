@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Kanit", sans-serif
   }
   
   .navbar {
@@ -107,9 +108,13 @@
     color: red;
     border-radius: 40px;
     text-align: center;
-  }
+    transition: all 1s;}
+
+    .tithis:hover{transform: scale(1.25)}
   
-  .phis {
+    .phis:hover{transform: scale(1.70)}
+  
+    .phis {
     color: red;
     margin-inline-start: 500px;
     margin-inline-end: 580px;
@@ -120,7 +125,7 @@
     background-color: rgba(11, 11, 80, 0.89);
     font-size: larger;
     border-radius: 50px;
-  }
+    transition: all 1s;}
   
   .titcont {
     font-weight: 700;
@@ -175,8 +180,8 @@
       transition: all .5s;
     }
     
-  .navbarix div a :hover {
-      transform: scale(1.05);
+  .navbarix div a:hover {
+      transform: scale(1.25);
   }
   
   .inicio {
