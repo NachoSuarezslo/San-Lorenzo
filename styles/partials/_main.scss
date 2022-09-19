@@ -1,80 +1,118 @@
-.titubi {
-    font-weight: 700;
-    margin-inline-start: 600px;
-    margin-inline-end: 670px;
-    margin-left: 600px;
-    background-color: rgb(16, 16, 110);
+body{
+  background: rgb(16, 16, 110);
+
+}
+
+main{
+  min-height: 90vh;
+
+  .slide{
+    width: 80%;
+    margin: 1rem auto;
+    img{
+      border: solid 4px black;
+      height: 700px;
+      object-fit: cover;
+    }
+  }
+}
+
+// UBICACIÓN
+
+.seccion-ubicacion{
+  text-align: center;
+  .titubi {
     color: red;
-    border-radius: 40px;
-    text-align: center;
+    margin: 1.5rem 0;
   }
   .subtitubi {
     font-weight: 400px;
-    margin-inline-start: 600px;
-    margin-inline-end: 670px;
-    margin-left: 600px;
-    background-color: rgb(16, 16, 110);
     color: red;
-    border-radius: 40px;
-    text-align: center;
   }
   .imgubi {
-    margin-inline-start: 650px;
-    margin-top: 50px;
+    margin-bottom: 1.5rem;
+    height: 500px;
+    width: 450px;
+    object-fit: cover;
   }
-  
+}
+
+
+// TROFEOS
+
+.seccion-trofeos{
+  margin: 2rem;
+  text-align: center;
   .tittrof {
     font-weight: 700;
-    margin-inline-start: 600px;
-    margin-inline-end: 670px;
-    margin-left: 600px;
-    background-color: rgb(16, 16, 110);
     color: red;
-    border-radius: 40px;
-    text-align: center;
+    margin-bottom: 1rem;
   }
-  
-  .imgtrof {
-    margin-inline-start: 390px;
-    width: 1100px;
-    height: 600px;
+  div{
+    display: grid;
+    place-content: center;
+    .imgtrof {
+      width: 60%;
+      height: 600px;
+      margin: auto;
+    }
   }
-  
-  .tithis {
-    font-weight: 700;
-    margin-inline-start: 600px;
-    margin-inline-end: 670px;
-    margin-left: 600px;
-    background-color: rgb(16, 16, 110);
-    color: red;
-    border-radius: 40px;
-    text-align: center;
-    transition: all 1s;}
+}
 
-    .tithis:hover{transform: scale(1.25)}
-  
-    .phis:hover{transform: scale(1.70)}
-  
-    .phis {
+
+
+// HISTORIA
+
+.seccion-historia{
+  margin: 1.5rem 0;
+  .tithis {
     color: red;
-    margin-inline-start: 500px;
-    margin-inline-end: 580px;
-    padding-top: 50px;
-    padding-right: 50px;
-    padding-bottom: 50px;
-    padding-left: 50px;
-    background-color: rgba(11, 11, 80, 0.89);
-    font-size: larger;
-    border-radius: 50px;
-    transition: all 1s;}
+    text-align: center;
+    transition: all 1s;
+    margin-bottom: 1rem;
+  }
   
+  .phis {
+    width: 80%;
+    margin: auto;
+    padding: 1rem;
+    color: red;
+    background-color: rgba(11, 11, 80, 0.89);
+    border-radius: 10px;
+    font-size: larger;
+    transition: all 1s;
+  }
+}
+
+
+// CONTACTO
+
+.form-contacto{
+  margin-top: 2rem;
   .titcont {
-    font-weight: 700;
-    margin-inline-start: 600px;
-    margin-inline-end: 670px;
-    margin-left: 600px;
-    background-color: rgb(16, 16, 110);
     color: red;
     border-radius: 40px;
     text-align: center;
+    margin: 1rem 0;
   }
+}
+
+@media(max-width:600px){
+  .main{
+    .slide{
+      img{
+        height: 500px;
+      }
+    }
+  }
+  .seccion-ubicacion{
+    .subtitubi {
+      color: red;
+      font-size: 1.3rem;
+    }
+    .imgubi {
+      height: 350px;
+      width: 300px;
+    }
+  }
+}

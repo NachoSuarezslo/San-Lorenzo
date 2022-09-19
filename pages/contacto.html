@@ -1,54 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CASLA-Contacto</title>
-    <meta name="description" content="Contactate con el club">
-    <meta name="keywords" content="Boedo,Fútbol,Cuervo,Matadores,Deportes">
-    <link rel="stylesheet" href="./../styles/style.css">
-</head>
-<body>
+    <meta name="description" content="Contactate con el club" />
+    <meta name="keywords" content="Boedo,Fútbol,Cuervo,Matadores,Deportes" />
+    <link rel="stylesheet" href="../styles/estilo.css" />
+  </head>
+  <body>
     <header>
-        <nav class="navbarix">
-          <div class="inicio">
-            <a href="./index.html">Club Atletico San Lorenzo De Almagro</a>
-          </div>
-          <div class="historia"><a href="./historia.html">HISTORIA</a></div>
-          <div class="ubicacion"><a href="./ubicacion.html">UBICACION</a></div>
-          <div class="trofeos"><a href="./trofeos.html">TROFEOS</a></div>
-          <div class="contacto"><a href="./contacto.html">CONTACTO</a></div>
-        </nav>
-      </header>
-<br>
-<br>
-      <main><h1 class="titcont">Contacto</h1></main>
-    <fieldset>
-        <form>
+      <nav class="navbarix">
+        <div class="inicio">
+          <a href="../index.html"
+            ><img src="../images/san lorenzo escudo.png" alt="escudo"
+          /></a>
+        </div>
+        <div class="historia"><a href="./historia.html">HISTORIA</a></div>
+        <div class="ubicacion"><a href="./ubicacion.html">UBICACION</a></div>
+        <div class="trofeos"><a href="./trofeos.html">TROFEOS</a></div>
+        <div class="contacto"><a href="./contacto.html">CONTACTO</a></div>
+      </nav>
+    </header>
+    <main>
+      <section class="form-contacto">
+        <h1 class="titcont">Contacto</h1>
+        <fieldset>
+          <form>
             <label for="iname">Numero de socio</label>
-            <input id="iname" type="text">
-            <br>
-            <br>
+            <input id="iname" type="tel" required/>
+
             <label for="imail">Mail</label>
-            <input id="imail" type="email">
-            <br>
-            <br>
-            <label for="hola">Consultas</label> 
-            <textarea name="Envia tu consulta" id="hola" cols="30" rows="10"></textarea>
-            <br>  
-            <input id="hola" type="submit" value="Enviar">
-        </form>
-        <br>
-        <br>
-        <p>5147-4433</p>
-        <br>
-        <p>socios@sanlorenzo.com.ar</p> 
-    </fieldset>
-    
+            <input id="imail" type="email" required/>
+
+            <label for="hola">Consultas</label>
+            <textarea
+              name="Envia tu consulta"
+              id="hola"
+              cols="30"
+              rows="10"
+              required
+              ></textarea>
+            <input id="hola" type="submit" value="Enviar" />
+          </form>
+          <p>5147-4433</p>
+          <p>socios@sanlorenzo.com.ar</p>
+        </fieldset>
+      </section>
+    </main>
+
     <footer>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/pLVEqy0ogGs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </footer>
-   
-</body>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/pLVEqy0ogGs"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </footer>
+  </body>
 </html>

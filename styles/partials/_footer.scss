@@ -1,13 +1,20 @@
 footer {
-    background-color: black;
-    display: grid;
-    place-content: center;
-    padding: 2rem;
-  footer iframe{
-      height: 300px;
-      width: 600px;
+  background-color: black;
+  display: grid;
+  place-content: center;
+  padding: 2rem;
+  iframe{
+    height: 300px;
+    width: 500px;
   } 
 }
   
+@media(max-width:600px){
+  footer{
+    iframe{
+      width: 300px;
+    }
+  }
+}
  
   

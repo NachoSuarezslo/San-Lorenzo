@@ -1,13 +1,19 @@
 fieldset {
-    margin-inline-start: 400px;
-    margin-inline-end: 500px;
-    background-color: white;
-    margin-top: 50px;
-    text-align: center;
-    padding: 1rem;
-   
+  width: 50%;
+  margin: auto;
+  background-color: white;
+  text-align: center;
+  padding: .5rem;
+
   form {
-    text-align: justify;
     display: grid;
-    place-content: center; } 
+    place-content: center;
+    input{
+      margin-bottom: .5rem;
+    }
+    textarea{
+      margin-bottom: .5rem;
+    }
+
+  }
 }

@@ -1,247 +1,308 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap');
-
-*{margin: 0;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Kanit", sans-serif
-  }
-  
-  .navbar {
-    display: grid;
-    align-items: center;
-  }
-  
-  body {
-    background-image: url("./../images/San-Lorenzo-campeon-copa-Libertadores-2014-1.webp");}
-  
-  .menu {
-    height: 300px;
-    width: 300px;
-    background-color: rgba(255, 0, 0, 0.705);
-    padding-left: 0px;
-    padding-top: 30px;
-    list-style-type: none;
-    border-radius: 50%;
-    font-family: "Kanit", sans-serif;
-    font-weight: 500;
-    font-size: x-large;
-  }
-  
-  .menu__item {
-    text-decoration: underline;
-    margin-block: 10px;
-    text-align: center;
-    align-items: flex-end;
-    transition: all .5s;
-  }
-  
-  .menu__item:hover{
-      transform: scale(1.25);
-  }
-  
-  li a {
-    color: rgb(16, 16, 110);
-    text-align: center;
-  }
-  
-  h1 {
-    margin-inline-start: 600px;
-    margin-inline-end: 670px;
-    margin-left: 600px;
-    background-color: rgb(16, 16, 110);
-    color: red;
-    border-radius: 40px;
-    text-align: center;
-  }
-  
-  .subtitubi {
-    font-weight: 400px;
-    margin-inline-start: 600px;
-    margin-inline-end: 670px;
-    margin-left: 600px;
-    background-color: rgb(16, 16, 110);
-    color: red;
-    border-radius: 40px;
-    text-align: center;
-  }
-  
-  .titubi {
-    font-weight: 700;
-    margin-inline-start: 600px;
-    margin-inline-end: 670px;
-    margin-left: 600px;
-    background-color: rgb(16, 16, 110);
-    color: red;
-    border-radius: 40px;
-    text-align: center;
-  }
-  
-  .imgubi {
-    margin-inline-start: 650px;
-    margin-top: 50px;
-  }
-  
-  .tittrof {
-    font-weight: 700;
-    margin-inline-start: 600px;
-    margin-inline-end: 670px;
-    margin-left: 600px;
-    background-color: rgb(16, 16, 110);
-    color: red;
-    border-radius: 40px;
-    text-align: center;
-  }
-  
-  .imgtrof {
-    margin-inline-start: 390px;
-    width: 1100px;
-    height: 600px;
-  }
-  
-  .tithis {
-    font-weight: 700;
-    margin-inline-start: 600px;
-    margin-inline-end: 670px;
-    margin-left: 600px;
-    background-color: rgb(16, 16, 110);
-    color: red;
-    border-radius: 40px;
-    text-align: center;
-    transition: all 1s;}
-
-    .tithis:hover{transform: scale(1.25)}
-  
-    .phis:hover{transform: scale(1.70)}
-  
-    .phis {
-    color: red;
-    margin-inline-start: 500px;
-    margin-inline-end: 580px;
-    padding-top: 50px;
-    padding-right: 50px;
-    padding-bottom: 50px;
-    padding-left: 50px;
-    background-color: rgba(11, 11, 80, 0.89);
-    font-size: larger;
-    border-radius: 50px;
-    transition: all 1s;}
-  
-  .titcont {
-    font-weight: 700;
-    margin-inline-start: 600px;
-    margin-inline-end: 670px;
-    margin-left: 600px;
-    background-color: rgb(16, 16, 110);
-    color: red;
-    border-radius: 40px;
-    text-align: center;
-  }
-  
-  fieldset {
-    margin-inline-start: 400px;
-    margin-inline-end: 500px;
-    background-color: white;
-    margin-top: 50px;
-    text-align: center;
-    padding: 1rem;
-  }
-  
-  form {
-    text-align: justify;
-    display: grid;
-    place-content: center;
-  }
-  
-  .navbarix {
-    font-family: "Kanit", sans-serif;
-    font-weight: 500;
-    font-size: x-large;
-    width: 100%;
-    height: 100vh;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-      "inicio contacto historia"
-      "inicio trofeos  ubicacion";
-  }
-  
-  .navbarix div {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-  }
-  
-  .navbarix div a {
-      border-radius: 50px;
-      background-color: rgb(0, 0, 0);
-      padding: .5rem;
-      color: aliceblue;
-      transition: all .5s;
-    }
-    
-  .navbarix div a:hover {
-      transform: scale(1.25);
-  }
-  
-  .inicio {
-    grid-area: inicio;
-    background-image: url("./../images/escudo.jpg");
-    background-repeat: no-repeat;
-    background-size: 300px, 300px, 300x, 300px;
-    background-position: center;
-    transition: all 1s;
-  }
-  
-  .contacto {
-    grid-area: contacto;
-    background-color: rgb(16, 16, 110);
-    transition: all 1s;
-  }
-  
-  .historia {
-    grid-area: historia;
-    background-color: rgb(180, 8, 8);
-    transition: all 1s;
-  }
-  
-  .trofeos {
-    grid-area: trofeos;
-    background-color: rgb(180, 8, 8);
-    transition: all 1s;
-  }
-  
-  .ubicacion {
-    grid-area: ubicacion;
-    background-color: rgb(16, 16, 110);
-    transition: all 1s;
-  }
-  
-  .a:hover{
-    transform: scale(1.25);
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap");
+* {
+  margin: 0;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Kanit", sans-serif;
 }
-  main div{
-      padding: 2rem;
-  }
-  
-  main div img{
-      height: 600px;
-      object-fit: cover;
-  }
-  
-  footer {
-    background-color: black;
-    display: grid;
-    place-content: center;
-    padding: 2rem;
-  }
-  
-  footer iframe{
-      height: 300px;
-      width: 600px;
-  }
-  
-  @media (max-width:576px)
-  {
 
+header {
+  min-height: 10vh;
+}
+
+.navbarix {
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  font-size: x-large;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "inicio contacto historia"
+ "inicio trofeos  ubicacion";
+}
+
+.navbarix div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbarix div a {
+  padding: .5rem;
+  color: aliceblue;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  text-decoration: none;
+}
+
+.navbarix div a img {
+  height: 20vh;
+}
+
+.navbarix div a:hover {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+}
+
+.inicio {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: inicio;
+  background-repeat: no-repeat;
+  background-size: 300px, 300px, 300x, 300px;
+  background-position: center;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.contacto {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: contacto;
+  background-color: #10106e;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.historia {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: historia;
+  background-color: #b40808;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.trofeos {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: trofeos;
+  background-color: #b40808;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.ubicacion {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: ubicacion;
+  background-color: #10106e;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.a:hover {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+}
+
+.menu {
+  height: 300px;
+  width: 300px;
+  background-color: rgba(255, 0, 0, 0.705);
+  padding-left: 0px;
+  padding-top: 30px;
+  list-style-type: none;
+  border-radius: 50%;
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  font-size: x-large;
+}
+
+.menu .menu__item {
+  text-decoration: underline;
+  margin-block: 10px;
+  text-align: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.menu__item:hover {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+}
+
+li a {
+  color: #10106e;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .navbarix {
+        grid-template-areas: "inicio contacto"
+ "inicio historia"
+ "inicio ubicacion"
+ "inicio trofeos";
   }
+  .navbarix div a {
+    font-size: 1.2rem;
+  }
+}
+
+fieldset {
+  width: 50%;
+  margin: auto;
+  background-color: white;
+  text-align: center;
+  padding: .5rem;
+}
+
+fieldset form {
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+fieldset form input {
+  margin-bottom: .5rem;
+}
+
+fieldset form textarea {
+  margin-bottom: .5rem;
+}
+
+footer {
+  background-color: black;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  padding: 2rem;
+}
+
+footer iframe {
+  height: 300px;
+  width: 500px;
+}
+
+@media (max-width: 600px) {
+  footer iframe {
+    width: 300px;
+  }
+}
+
+body {
+  background: #10106e;
+}
+
+main {
+  min-height: 90vh;
+}
+
+main .slide {
+  width: 80%;
+  margin: 1rem auto;
+}
+
+main .slide img {
+  border: solid 4px black;
+  height: 700px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.seccion-ubicacion {
+  text-align: center;
+}
+
+.seccion-ubicacion .titubi {
+  color: red;
+  margin: 1.5rem 0;
+}
+
+.seccion-ubicacion .subtitubi {
+  font-weight: 400px;
+  color: red;
+}
+
+.seccion-ubicacion .imgubi {
+  margin-bottom: 1.5rem;
+  height: 500px;
+  width: 450px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.seccion-trofeos {
+  margin: 2rem;
+  text-align: center;
+}
+
+.seccion-trofeos .tittrof {
+  font-weight: 700;
+  color: red;
+  margin-bottom: 1rem;
+}
+
+.seccion-trofeos div {
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+.seccion-trofeos div .imgtrof {
+  width: 60%;
+  height: 600px;
+  margin: auto;
+}
+
+.seccion-historia {
+  margin: 1.5rem 0;
+}
+
+.seccion-historia .tithis {
+  color: red;
+  text-align: center;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  margin-bottom: 1rem;
+}
+
+.seccion-historia .phis {
+  width: 80%;
+  margin: auto;
+  padding: 1rem;
+  color: red;
+  background-color: rgba(11, 11, 80, 0.89);
+  border-radius: 10px;
+  font-size: larger;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.form-contacto {
+  margin-top: 2rem;
+}
+
+.form-contacto .titcont {
+  color: red;
+  border-radius: 40px;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+@media (max-width: 600px) {
+  .main .slide img {
+    height: 500px;
+  }
+  .seccion-ubicacion .subtitubi {
+    color: red;
+    font-size: 1.3rem;
+  }
+  .seccion-ubicacion .imgubi {
+    height: 350px;
+    width: 300px;
+  }
+}
+/*# sourceMappingURL=estilo.css.map */
