@@ -3,8 +3,13 @@
   margin: 0;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: "Kanit", sans-serif;
+}
+
+header {
+  min-height: 10vh;
 }
 
 .navbarix {
@@ -12,63 +17,92 @@
   font-weight: 500;
   font-size: x-large;
   width: 100%;
-  height: 100vh;
+  display: -ms-grid;
   display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: "inicio contacto historia" "inicio trofeos  ubicacion";
+      grid-template-areas: "inicio contacto historia"
+ "inicio trofeos  ubicacion";
 }
-.navbarix .navbarix div {
+
+.navbarix div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.navbarix .navbarix div a {
-  border-radius: 50px;
-  background-color: rgb(0, 0, 0);
-  padding: 0.5rem;
+
+.navbarix div a {
+  padding: .5rem;
   color: aliceblue;
-  transition: all 0.5s;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  text-decoration: none;
+}
+
+.navbarix div a img {
+  height: 20vh;
 }
 
 .navbarix div a:hover {
-  transform: scale(1.25);
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
 }
 
 .inicio {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
   grid-area: inicio;
-  background-image: url("./../images/escudo.jpg");
   background-repeat: no-repeat;
   background-size: 300px, 300px, 300x, 300px;
   background-position: center;
+  -webkit-transition: all 1s;
   transition: all 1s;
 }
 
 .contacto {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
   grid-area: contacto;
-  background-color: rgb(16, 16, 110);
+  background-color: #10106e;
+  -webkit-transition: all 1s;
   transition: all 1s;
 }
 
 .historia {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
   grid-area: historia;
-  background-color: rgb(180, 8, 8);
+  background-color: #b40808;
+  -webkit-transition: all 1s;
   transition: all 1s;
 }
 
 .trofeos {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
   grid-area: trofeos;
-  background-color: rgb(180, 8, 8);
+  background-color: #b40808;
+  -webkit-transition: all 1s;
   transition: all 1s;
 }
 
 .ubicacion {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
   grid-area: ubicacion;
-  background-color: rgb(16, 16, 110);
+  background-color: #10106e;
+  -webkit-transition: all 1s;
   transition: all 1s;
 }
 
 .a:hover {
-  transform: scale(1.25);
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
 }
 
 .menu {
@@ -83,149 +117,192 @@
   font-weight: 500;
   font-size: x-large;
 }
+
 .menu .menu__item {
   text-decoration: underline;
   margin-block: 10px;
   text-align: center;
-  align-items: flex-end;
-  transition: all 0.5s;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
 .menu__item:hover {
-  transform: scale(1.25);
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
 }
 
 li a {
-  color: rgb(16, 16, 110);
+  color: #10106e;
   text-align: center;
 }
 
-fieldset {
-  -webkit-margin-start: 400px;
-          margin-inline-start: 400px;
-  -webkit-margin-end: 500px;
-          margin-inline-end: 500px;
-  background-color: white;
-  margin-top: 50px;
-  text-align: center;
-  padding: 1rem;
+@media (max-width: 600px) {
+  .navbarix {
+        grid-template-areas: "inicio contacto"
+ "inicio historia"
+ "inicio ubicacion"
+ "inicio trofeos";
+  }
+  .navbarix div a {
+    font-size: 1.2rem;
+  }
 }
+
+fieldset {
+  width: 50%;
+  margin: auto;
+  background-color: white;
+  text-align: center;
+  padding: .5rem;
+}
+
 fieldset form {
-  text-align: justify;
+  display: -ms-grid;
   display: grid;
   place-content: center;
+}
+
+fieldset form input {
+  margin-bottom: .5rem;
+}
+
+fieldset form textarea {
+  margin-bottom: .5rem;
 }
 
 footer {
   background-color: black;
+  display: -ms-grid;
   display: grid;
   place-content: center;
   padding: 2rem;
 }
-footer footer iframe {
+
+footer iframe {
   height: 300px;
-  width: 600px;
+  width: 500px;
 }
 
-.titubi {
-  font-weight: 700;
-  -webkit-margin-start: 600px;
-          margin-inline-start: 600px;
-  -webkit-margin-end: 670px;
-          margin-inline-end: 670px;
-  margin-left: 600px;
-  background-color: rgb(16, 16, 110);
-  color: red;
-  border-radius: 40px;
+@media (max-width: 600px) {
+  footer iframe {
+    width: 300px;
+  }
+}
+
+body {
+  background: #10106e;
+}
+
+main {
+  min-height: 90vh;
+}
+
+main .slide {
+  width: 80%;
+  margin: 1rem auto;
+}
+
+main .slide img {
+  border: solid 4px black;
+  height: 700px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.seccion-ubicacion {
   text-align: center;
 }
 
-.subtitubi {
+.seccion-ubicacion .titubi {
+  color: red;
+  margin: 1.5rem 0;
+}
+
+.seccion-ubicacion .subtitubi {
   font-weight: 400px;
-  -webkit-margin-start: 600px;
-          margin-inline-start: 600px;
-  -webkit-margin-end: 670px;
-          margin-inline-end: 670px;
-  margin-left: 600px;
-  background-color: rgb(16, 16, 110);
   color: red;
-  border-radius: 40px;
+}
+
+.seccion-ubicacion .imgubi {
+  margin-bottom: 1.5rem;
+  height: 500px;
+  width: 450px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.seccion-trofeos {
+  margin: 2rem;
   text-align: center;
 }
 
-.imgubi {
-  -webkit-margin-start: 650px;
-          margin-inline-start: 650px;
-  margin-top: 50px;
-}
-
-.tittrof {
+.seccion-trofeos .tittrof {
   font-weight: 700;
-  -webkit-margin-start: 600px;
-          margin-inline-start: 600px;
-  -webkit-margin-end: 670px;
-          margin-inline-end: 670px;
-  margin-left: 600px;
-  background-color: rgb(16, 16, 110);
   color: red;
-  border-radius: 40px;
-  text-align: center;
+  margin-bottom: 1rem;
 }
 
-.imgtrof {
-  -webkit-margin-start: 390px;
-          margin-inline-start: 390px;
-  width: 1100px;
+.seccion-trofeos div {
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+.seccion-trofeos div .imgtrof {
+  width: 60%;
   height: 600px;
+  margin: auto;
 }
 
-.tithis {
-  font-weight: 700;
-  -webkit-margin-start: 600px;
-          margin-inline-start: 600px;
-  -webkit-margin-end: 670px;
-          margin-inline-end: 670px;
-  margin-left: 600px;
-  background-color: rgb(16, 16, 110);
+.seccion-historia {
+  margin: 1.5rem 0;
+}
+
+.seccion-historia .tithis {
   color: red;
-  border-radius: 40px;
   text-align: center;
+  -webkit-transition: all 1s;
   transition: all 1s;
+  margin-bottom: 1rem;
 }
 
-.tithis:hover {
-  transform: scale(1.25);
-}
-
-.phis:hover {
-  transform: scale(1.7);
-}
-
-.phis {
+.seccion-historia .phis {
+  width: 80%;
+  margin: auto;
+  padding: 1rem;
   color: red;
-  -webkit-margin-start: 500px;
-          margin-inline-start: 500px;
-  -webkit-margin-end: 580px;
-          margin-inline-end: 580px;
-  padding-top: 50px;
-  padding-right: 50px;
-  padding-bottom: 50px;
-  padding-left: 50px;
   background-color: rgba(11, 11, 80, 0.89);
+  border-radius: 10px;
   font-size: larger;
-  border-radius: 50px;
+  -webkit-transition: all 1s;
   transition: all 1s;
 }
 
-.titcont {
-  font-weight: 700;
-  -webkit-margin-start: 600px;
-          margin-inline-start: 600px;
-  -webkit-margin-end: 670px;
-          margin-inline-end: 670px;
-  margin-left: 600px;
-  background-color: rgb(16, 16, 110);
+.form-contacto {
+  margin-top: 2rem;
+}
+
+.form-contacto .titcont {
   color: red;
   border-radius: 40px;
   text-align: center;
-}/*# sourceMappingURL=estilo.css.map */
+  margin: 1rem 0;
+}
+
+@media (max-width: 600px) {
+  .main .slide img {
+    height: 500px;
+  }
+  .seccion-ubicacion .subtitubi {
+    color: red;
+    font-size: 1.3rem;
+  }
+  .seccion-ubicacion .imgubi {
+    height: 350px;
+    width: 300px;
+  }
+}
+/*# sourceMappingURL=estilo.css.map */
