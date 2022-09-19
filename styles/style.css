@@ -13,8 +13,8 @@
   }
   
   body {
-    background-image: url("./../images/San-Lorenzo-campeon-copa-Libertadores-2014-1.webp");
-  }
+    background-image: url("./../images/San-Lorenzo-campeon-copa-Libertadores-2014-1.webp");}
+  
   .menu {
     height: 300px;
     width: 300px;
@@ -241,3 +241,7 @@
       width: 600px;
   }
   
+  @media (max-width:576px)
+  {
+
+  }
