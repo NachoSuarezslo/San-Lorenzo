@@ -108,7 +108,7 @@ header {
 .menu {
   height: 300px;
   width: 300px;
-  background-color: rgba(255, 0, 0, 0.705);
+  background-color: #b40808;
   padding-left: 0px;
   padding-top: 30px;
   list-style-type: none;
@@ -156,22 +156,22 @@ fieldset {
   margin: auto;
   background-color: white;
   text-align: center;
-  padding: .5rem;
-}
+  padding: .8rem;
+resize: none;}
 
 fieldset form {
   display: -ms-grid;
   display: grid;
   place-content: center;
-}
+resize: none;}
 
 fieldset form input {
-  margin-bottom: .5rem;
-}
+  margin-bottom: .8rem;
+resize: none;}
 
 fieldset form textarea {
-  margin-bottom: .5rem;
-}
+  margin-bottom: .8rem;
+resize: none;}
 
 footer {
   background-color: black;
@@ -181,15 +181,26 @@ footer {
   padding: 2rem;
 }
 
-footer iframe {
-  height: 300px;
-  width: 500px;
-}
+ iframe {
+  width: 300px;
+    height: 300px;
+    width: 500px;
+    display: -ms-grid;
+    display: grid;
+    place-content: center;
+    padding: 2rem;
+  align-items: center;
+justify-content: center;}
 
 @media (max-width: 600px) {
-  footer iframe {
+  iframe {
     width: 300px;
-  }
+    height: 300px;
+    width: 500px;
+    display: -ms-grid;
+    display: grid;
+    place-content: center;
+    padding: 2rem;}
 }
 
 body {
@@ -217,13 +228,13 @@ main .slide img {
 }
 
 .seccion-ubicacion .titubi {
-  color: red;
+  color: #b40808;
   margin: 1.5rem 0;
 }
 
 .seccion-ubicacion .subtitubi {
   font-weight: 400px;
-  color: red;
+  color: #b40808;
 }
 
 .seccion-ubicacion .imgubi {
@@ -240,8 +251,10 @@ main .slide img {
 }
 
 .seccion-trofeos .tittrof {
-  font-weight: 700;
-  color: red;
+  color:#b40808;
+  text-align: center;
+  -webkit-transition: all 1s;
+  transition: all 1s;
   margin-bottom: 1rem;
 }
 
@@ -262,7 +275,7 @@ main .slide img {
 }
 
 .seccion-historia .tithis {
-  color: red;
+  color:#b40808;
   text-align: center;
   -webkit-transition: all 1s;
   transition: all 1s;
@@ -273,7 +286,7 @@ main .slide img {
   width: 80%;
   margin: auto;
   padding: 1rem;
-  color: red;
+  color: #b40808;
   background-color: rgba(11, 11, 80, 0.89);
   border-radius: 10px;
   font-size: larger;
@@ -286,7 +299,7 @@ main .slide img {
 }
 
 .form-contacto .titcont {
-  color: red;
+  color: #b40808;
   border-radius: 40px;
   text-align: center;
   margin: 1rem 0;
@@ -297,7 +310,7 @@ main .slide img {
     height: 500px;
   }
   .seccion-ubicacion .subtitubi {
-    color: red;
+    color: #b40808;
     font-size: 1.3rem;
   }
   .seccion-ubicacion .imgubi {
@@ -305,4 +318,26 @@ main .slide img {
     width: 300px;
   }
 }
+
+
+p{color: #b40808;
+text-size-adjust: 50px;}
+.card{align-items: center;
+margin: 20px 20px 20px 20px;}
+
+.titindex {text-align: center;
+color: #10106e;
+background-color:rgba(255, 0, 0, 0.705);
+border-radius: 10cm;
+margin: 1cm 10cm 0cm 10cm;}
+
+.camisetas{ display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;}
+
+
+@media (max-width: 600px) {
+  .imgtrof{object-fit: cover;}}
+
 /*# sourceMappingURL=estilo.css.map */
